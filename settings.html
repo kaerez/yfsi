@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Your Free Smart Indicators Settings</title>
+    <link rel="stylesheet" href="https://p.trellocdn.com/power-up.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./settings.css">
+    <script src="https://p.trellocdn.com/power-up.min.js"></script>
+</head>
+<body>
+    <div class="settings-container">
+        <div class="loading-spinner" id="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>Loading...</p>
+        </div>
+        
+        <div class="error-message" id="error-message" style="display: none;"></div>
+        <div class="success-message" id="success-message" style="display: none;"></div>
+        
+        <div class="header-bar">
+            <h1>Your Free Smart Indicators</h1>
+        </div>
+        
+        <div class="main-content">
+            <div class="header-with-button">
+                <h2>Badge Rules</h2>
+                <div class="button-group">
+                    <button class="mod-primary" id="add-rule-btn">Add Rule</button>
+                </div>
+            </div>
+            
+            <div id="rules-list"></div>
+        </div>
+    </div>
+    
+    <div class="modal" id="rule-modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Add Badge Rule</h3>
+                <button class="close-button" id="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="rule-form" novalidate>
+                    <div class="form-group">
+                        <label for="rule-name">Rule Name</label>
+                        <input type="text" id="rule-name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <h4>Conditions</h4>
+                        <div class="conditions-header">
+                            <span class="conditions-label">Build your conditions:</span>
+                            <button type="button" class="mod-primary" id="add-condition-btn">+ Add Condition</button>
+                        </div>
+                        <div id="conditions-container">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <h4>Badge</h4>
+                        <div class="badge-options">
+                            <label><input type="radio" name="badge-type" value="text" checked> Text</label>
+                            <label><input type="radio" name="badge-type" value="emoji"> Emoji</label>
+                            <label><input type="radio" name="badge-type" value="icon"> Icon</label>
+                        </div>
+                        
+                        <div id="badge-content-container">
+                            <input type="text" id="badge-content" placeholder="Badge text" style="display: block;">
+                            <select id="emoji-selector" style="display: none;">
+                                <option value="">Select an emoji...</option>
+                                <optgroup label="Thumbs & Hands">
+                                    <option value="👍">👍 Thumbs Up</option>
+                                    <option value="👎">👎 Thumbs Down</option>
+                                    <option value="👌">👌 OK Hand</option>
+                                    <option value="✋">✋ Raised Hand</option>
+                                    <option value="👋">👋 Waving Hand</option>
+                                </optgroup>
+                                <optgroup label="Status">
+                                    <option value="✅">✅ Check</option>
+                                    <option value="❌">❌ Cross</option>
+                                    <option value="🚨">🚨 Urgent</option>
+                                </optgroup>
+                            </select>
+                            <select id="icon-selector" style="display: none;">
+                                <option value="">Select an icon...</option>
+                                <optgroup label="Priority">
+                                    <option value="🔥">🔥 Fire</option>
+                                    <option value="⚡">⚡ Lightning</option>
+                                    <option value="🚀">🚀 Rocket</option>
+                                    <option value="⭐">⭐ Star</option>
+                                    <option value="⚠️">⚠️ Warning</option>
+                                </optgroup>
+                                <optgroup label="Status">
+                                    <option value="✅">✅ Check</option>
+                                    <option value="❌">❌ Cross</option>
+                                    <option value="🔴">🔴 Red Circle</option>
+                                    <option value="🟢">🟢 Green Circle</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="badge-color">Badge Color</label>
+                            <div class="color-palette">
+                                <input type="color" id="badge-color" value="#0079BF">
+                                <div class="color-presets">
+                                    <button type="button" class="color-preset" data-color="#0079BF" style="background-color: #0079BF;" title="Blue"></button>
+                                    <button type="button" class="color-preset" data-color="#61BD4F" style="background-color: #61BD4F;" title="Green"></button>
+                                    <button type="button" class="color-preset" data-color="#F2D600" style="background-color: #F2D600;" title="Yellow"></button>
+                                    <button type="button" class="color-preset" data-color="#EB5A46" style="background-color: #EB5A46;" title="Red"></button>
+                                    <button type="button" class="color-preset" data-color="#C377E0" style="background-color: #C377E0;" title="Purple"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="mod-primary">Save Rule</button>
+                        <button type="button" id="cancel-button">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./settings.js"></script>
+</body>
+</html>
