@@ -1,6 +1,6 @@
 # Your Free Smart Indicators
 
-## Transform your Trello boards with intelligent visual indicators— 100% Free, Unlimited, and Private!
+## Transform your Trello boards with intelligent visual indicators — 100% Free, Unlimited, and Private!
 
 Not all cards are created equal. Some are high priority, others are overdue, and some need urgent attention from specific team members. Your Free Smart Indicators is a powerful Power-Up that automatically displays custom badges on your cards based on configurable rules. Never miss critical information, and see what matters most at a glance, right on your card fronts.
 
@@ -18,7 +18,7 @@ Not all cards are created equal. Some are high priority, others are overdue, and
 
 ❌ Spying / Tracking
 
-### 🔒 Ultimate Privacy & Security
+## 🔒 Ultimate Privacy & Security
 
 Unlike other Power-Ups, we do not track you, and we do not store your data on external servers.
 
@@ -28,7 +28,7 @@ No External Databases: All of your badge rules are stored safely and natively in
 
 Zero Tracking: No analytics, no marketing cookies, and no tracking scripts. Your data stays between you and Trello.
 
-### ⚡ Key Benefits
+## ⚡ Key Benefits
 
 Instant Visual Context: See important information without clicking into cards.
 
@@ -38,7 +38,7 @@ Improve Team Communication: Create visual indicators everyone can understand ins
 
 Boost Productivity: Spend less time searching and more time doing.
 
-### 🛠️ Powerful Features & Unlimited Rules
+## 🛠️ Powerful Features & Unlimited Rules
 
 Create as many intelligent rules as you need. Automatically show badges based on:
 
@@ -54,7 +54,7 @@ Checklist Progress: Trigger badges based on completion percentages.
 
 List Position: Indicate workflow stages automatically.
 
-### 🎨 Flexible Badge Types
+## 🎨 Flexible Badge Types
 
 Design your indicators exactly how you want them to look:
 
@@ -62,14 +62,17 @@ Text Badges: Type custom text to display directly on the card front.
 
 Emoji Badges: Add eye-catching emoji indicators.
 
-Professional Icons: Use sleek, professional SVG icons (formerly a Premium feature, now free for everyone!).
+Professional Icons: Use sleek, professional SVG icons.
 
 Color Coding: Select from a full palette of Trello-native background colors.
 
-### 🚀 Get Started in 30 Seconds
+## 🚀 Get Started in 30 Seconds
 
 Add to Trello: Enable "Your Free Smart Indicators" from the Power-Ups directory.
 
 Create Your First Rule: Click the "Your Free Smart Indicators" board button at the top of your screen to open the rule builder.
 
 Watch It Work: See badges appear on your cards automatically in real-time!
+![GIF](https://ysfi.kalman.co.il/preview.gif)
+
+![GIF](https://yfsi.kalman.co.il/preview.gif)
